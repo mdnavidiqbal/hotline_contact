@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>জরুরি সেবা ডিরেক্টরি</title>
-        <!-- Daisy ui -->
+    <!-- Daisy ui -->
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@5"
       rel="stylesheet"
@@ -12,13 +12,13 @@
     />
     <!-- Taiwind CSS cdn link -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <!-- Nav-bar -->
-         <div class="navbar bg-base-100 shadow flex flex-wrap min-h-[50px] p-5">
+      <!-- Nav-bar -->
+      <div class="navbar bg-base-100 shadow flex flex-wrap min-h-[50px] p-5">
         <div class="flex-1 flex gap-3 items-center">
-          <img src="assets/logo.png" class="w-8 h-8" />
+          <img src="./assets/logo.png" class="w-8 h-8" />
           <span class="hidden sm:inline font-bold text-green-900"
             >Emergency <br />Service</span
           >
@@ -28,13 +28,13 @@
             class="badge bg-[#41FF6B1A] w-[90px] h-[40px] gap-2 text-sm font-bold"
           >
             <span id="likeCount">0</span>
-            <img src="assets/heart.png" class="w-[20px]" alt="" />
+            <img src="./assets/heart.png" class="w-[20px]" alt="" />
           </div>
           <div
             class="badge bg-[#41FF6B1A] w-[90px] h-[40px] gap-2 text-sm font-bold"
           >
             <span id="coinCount">100</span
-            ><img src="assets/coin.png" class="w-[20px]" alt="" />
+            ><img src="./assets/coin.png" class="w-[20px]" alt="" />
           </div>
           <div
             class="badge badge-outline bg-green-600 w-[90px] h-[40px] rounded-xl gap-2 text-sm font-bold text-white"
@@ -44,7 +44,7 @@
         </div>
       </div>
       <!-- Hero-Section -->
-       <section
+      <section
         class="bg-gradient-to-r from-green-900 to-green-900 text-center py-8 px-3 text-white min-h-[50px]"
       >
         <img src="./assets/logo-dark.png" class="w-14 mx-auto mb-3" />
@@ -55,7 +55,184 @@
         </p>
       </section>
     </header>
-    <main></main>
+    <main>
+      <!-- Card-Section -->
+      <div
+        class="lg:col-span-2 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4"
+      >
+        <!-- National Service -->
+        <div class="card bg-base-100 shadow p-4">
+          <div class="flex justify-between items-center">
+            <div
+              class="text-4xl bg-[#ffe3e2] w-[40px] h-[40px] items-center flex justify-center rounded-[20%]"
+            >
+              <img src="./assets/emergency.png" class="w-[20px]" alt="" />
+            </div>
+            <button class="heartBtn text-xl">♡</button>
+          </div>
+          <h2 class="text-lg font-bold mt-2">জাতীয় জরুরি সেবা</h2>
+          <p class="text-gray-400">National Emergency Service</p>
+          <p class="text-2xl font-bold mb-3">999</p>
+          <span class="badge bg-gray-100 my-2">সার্বজনীন</span>
+          <div class="flex gap-2 flex-wrap">
+            <button class="btn btn-sm copyBtn" data-number="999">
+              <img src="./assets/copy.png" alt="" /> Copy
+            </button>
+            <button
+              class="btn btn-sm bg-green-600 callBtn text-white callBtn hover:bg-green-800"
+              data-name="জাতীয় জরুরি সেবা"
+              data-number="999"
+            >
+              <img src="./assets/call.png" alt="" />Call
+            </button>
+          </div>
+        </div>
+
+        <!-- Police -->
+        <div class="card bg-base-100 shadow p-4">
+          <div class="flex justify-between items-center">
+            <div
+              class="text-4xl bg-[#ffe3e2] w-[40px] h-[40px] items-center flex justify-center rounded-[20%]"
+            >
+              <img src="./assets/police.png" class="w-[20px]" alt="" />
+            </div>
+            <button class="heartBtn text-xl">♡</button>
+          </div>
+          <h2 class="text-lg font-bold mt-2">পুলিশ</h2>
+          <p class="text-gray-400">Police</p>
+          <p class="text-2xl font-bold mb-3">999</p>
+          <span class="badge bg-gray-100 my-2">পুলিশ</span>
+          <div class="flex gap-2 flex-wrap">
+            <button class="btn btn-sm copyBtn" data-number="999">
+              <img src="./assets/copy.png" alt="" /> Copy
+            </button>
+            <button
+              class="btn btn-sm bg-green-600 text-white callBtn hover:bg-green-800"
+              data-name="পুলিশ"
+              data-number="999"
+            >
+              <img src="./assets/call.png" alt="" />Call
+            </button>
+          </div>
+        </div>
+
+        <!-- Fire Service -->
+        <div class="card bg-base-100 shadow p-4">
+          <div class="flex justify-between items-center">
+            <div
+              class="text-4xl bg-[#ffe3e2] w-[40px] h-[40px] items-center flex justify-center rounded-[20%]"
+            >
+              <img src="./assets/fire-service.png" class="w-[20px]" alt="" />
+            </div>
+            <button class="heartBtn text-xl">♡</button>
+          </div>
+          <h2 class="text-lg font-bold mt-2">ফায়ার সার্ভিস</h2>
+          <p class="text-gray-400">Fire Service</p>
+          <p class="text-2xl font-bold mb-3">999</p>
+          <span class="badge bg-gray-100 my-2">ফায়ার সার্ভিস</span>
+          <div class="flex gap-2 flex-wrap">
+            <button class="btn btn-sm copyBtn" data-number="999">
+              <img src="./assets/copy.png" alt="" /> Copy
+            </button>
+            <button
+              class="btn btn-sm bg-green-600 text-white callBtn hover:bg-green-800"
+              data-name="ফায়ার সার্ভিস"
+              data-number="11-999"
+            >
+              <img src="./assets/call.png" alt="" />Call
+            </button>
+          </div>
+        </div>
+
+        <!-- Ambulance -->
+        <div class="card bg-base-100 shadow p-4">
+          <div class="flex justify-between items-center">
+            <div
+              class="text-4xl bg-[#ffe3e2] w-[40px] h-[40px] items-center flex justify-center rounded-[20%]"
+            >
+              <img src="./assets/ambulance.png" class="w-[20px]" alt="" />
+            </div>
+            <button class="heartBtn text-xl">♡</button>
+          </div>
+          <h2 class="text-lg font-bold mt-2">অ্যাম্বুলেন্স</h2>
+          <p class="text-gray-400">Ambulance</p>
+          <p class="text-2xl font-bold mb-3">999</p>
+          <span class="badge bg-gray-100 my-2">অ্যাম্বুলেন্স</span>
+          <div class="flex gap-2 flex-wrap">
+            <button class="btn btn-sm copyBtn" data-number="333">
+              <img src="./assets/copy.png" alt="" /> Copy
+            </button>
+            <button
+              class="btn btn-sm bg-green-600 text-white callBtn hover:bg-green-800"
+              data-name="অ্যাম্বুলেন্স"
+              data-number="08790"
+            >
+              <img src="./assets/call.png" alt="" />Call
+            </button>
+          </div>
+        </div>
+
+        <!-- Baking-Service -->
+        <div class="card bg-base-100 shadow p-4">
+          <div class="flex justify-between items-center">
+            <div
+              class="text-4xl bg-[#ffe3e2] w-[40px] h-[40px] items-center flex justify-center rounded-[20%]"
+            >
+              <img src="./assets/brac.png" class="w-[20px]" alt="" />
+            </div>
+            <button class="heartBtn text-xl">♡</button>
+          </div>
+          <h2 class="text-lg font-bold mt-2">ব্যাংকিং সেবা</h2>
+          <p class="text-gray-400">Banking Service</p>
+          <p class="text-2xl font-bold mb-3">999</p>
+          <span class="badge bg-gray-100 my-2">ব্যাংকিং</span>
+          <div class="flex gap-2 flex-wrap">
+            <button class="btn btn-sm copyBtn" data-number="999">
+              <img src="./assets/copy.png" alt="" /> Copy
+            </button>
+            <button
+              class="btn btn-sm bg-green-600 text-white callBtn hover:bg-green-800"
+              data-name="ব্যাংকিং সেবা"
+              data-number="999"
+            >
+              <img src="./assets/call.png" alt="" />Call
+            </button>
+          </div>
+        </div>
+
+        <!-- Bangladesh-Railway -->
+        <div class="card bg-base-100 shadow p-4">
+          <div class="flex justify-between items-center">
+            <div
+              class="text-4xl bg-[#ffe3e2] w-[40px] h-[40px] items-center flex justify-center rounded-[20%]"
+            >
+              <img
+                src="./assets/Bangladesh-Railway.png"
+                class="w-[20px]"
+                alt=""
+              />
+            </div>
+            <button class="heartBtn text-xl">♡</button>
+          </div>
+          <h2 class="text-lg font-bold mt-2">জাতীয় রেলসেবা</h2>
+          <p class="text-gray-400">Bangladesh-Railway</p>
+          <p class="text-2xl font-bold mb-3">999</p>
+          <span class="badge bg-gray-100 my-2">রেলসেবা</span>
+          <div class="flex gap-2 flex-wrap">
+            <button class="btn btn-sm copyBtn" data-number="999">
+              <img src="./assets/copy.png" alt="" /> Copy
+            </button>
+            <button
+              class="btn btn-sm bg-green-600 text-white callBtn hover:bg-green-800"
+              data-name="জাতীয় রেলসেবা"
+              data-number="999"
+            >
+              <img src="./assets/call.png" alt="" />Call
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
     <footer></footer>
-</body>
+  </body>
 </html>
