@@ -56,182 +56,200 @@
       </section>
     </header>
     <main>
-      <!-- Card-Section -->
-      <div
-        class="lg:col-span-2 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4"
+     <div
+        class="grid grid-cols-1 lg:grid-cols-3 gap-6 p-4 sm:p-6 max-w-xxl mx-auto"
       >
-        <!-- National Service -->
-        <div class="card bg-base-100 shadow p-4">
-          <div class="flex justify-between items-center">
-            <div
-              class="text-4xl bg-[#ffe3e2] w-[40px] h-[40px] items-center flex justify-center rounded-[20%]"
-            >
-              <img src="./assets/emergency.png" class="w-[20px]" alt="" />
+        <!-- Cards Section -->
+        <div
+          class="lg:col-span-2 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4"
+        >
+          <!-- National Service -->
+          <div class="card bg-base-100 shadow p-4">
+            <div class="flex justify-between items-center">
+              <div
+                class="text-4xl bg-[#ffe3e2] w-[40px] h-[40px] items-center flex justify-center rounded-[20%]"
+              >
+                <img src="assets/emergency.png" class="w-[20px]" alt="" />
+              </div>
+              <button class="heartBtn text-xl">♡</button>
             </div>
-            <button class="heartBtn text-xl">♡</button>
+            <h2 class="text-lg font-bold mt-2">জাতীয় জরুরি সেবা</h2>
+            <p class="text-gray-400">National Emergency Service</p>
+            <p class="text-2xl font-bold mb-3">999</p>
+            <span class="badge bg-gray-100 my-2">সার্বজনীন</span>
+            <div class="flex gap-2 flex-wrap">
+              <button class="btn btn-sm copyBtn" data-number="999">
+                <img src="assets/copy.png" alt="" /> Copy
+              </button>
+              <button
+                class="btn btn-sm bg-green-600 callBtn text-white callBtn hover:bg-green-800"
+                data-name="জাতীয় জরুরি সেবা"
+                data-number="999"
+              >
+                <img src="/assets/call.png" alt="" />Call
+              </button>
+            </div>
           </div>
-          <h2 class="text-lg font-bold mt-2">জাতীয় জরুরি সেবা</h2>
-          <p class="text-gray-400">National Emergency Service</p>
-          <p class="text-2xl font-bold mb-3">999</p>
-          <span class="badge bg-gray-100 my-2">সার্বজনীন</span>
-          <div class="flex gap-2 flex-wrap">
-            <button class="btn btn-sm copyBtn" data-number="999">
-              <img src="./assets/copy.png" alt="" /> Copy
-            </button>
-            <button
-              class="btn btn-sm bg-green-600 callBtn text-white callBtn hover:bg-green-800"
-              data-name="জাতীয় জরুরি সেবা"
-              data-number="999"
-            >
-              <img src="./assets/call.png" alt="" />Call
-            </button>
+
+          <!-- Police -->
+          <div class="card bg-base-100 shadow p-4">
+            <div class="flex justify-between items-center">
+              <div
+                class="text-4xl bg-[#ffe3e2] w-[40px] h-[40px] items-center flex justify-center rounded-[20%]"
+              >
+                <img src="assets/police.png" class="w-[20px]" alt="" />
+              </div>
+              <button class="heartBtn text-xl">♡</button>
+            </div>
+            <h2 class="text-lg font-bold mt-2">পুলিশ</h2>
+            <p class="text-gray-400">Police</p>
+            <p class="text-2xl font-bold mb-3">999</p>
+            <span class="badge bg-gray-100 my-2">পুলিশ</span>
+            <div class="flex gap-2 flex-wrap">
+              <button class="btn btn-sm copyBtn" data-number="999">
+                <img src="/assets/copy.png" alt="" /> Copy
+              </button>
+              <button
+                class="btn btn-sm bg-green-600 text-white callBtn hover:bg-green-800"
+                data-name="পুলিশ"
+                data-number="999"
+              >
+                <img src="/assets/call.png" alt="" />Call
+              </button>
+            </div>
+          </div>
+
+          <!-- Fire Service -->
+          <div class="card bg-base-100 shadow p-4">
+            <div class="flex justify-between items-center">
+              <div
+                class="text-4xl bg-[#ffe3e2] w-[40px] h-[40px] items-center flex justify-center rounded-[20%]"
+              >
+                <img src="assets/fire-service.png" class="w-[20px]" alt="" />
+              </div>
+              <button class="heartBtn text-xl">♡</button>
+            </div>
+            <h2 class="text-lg font-bold mt-2">ফায়ার সার্ভিস</h2>
+            <p class="text-gray-400">Fire Service</p>
+            <p class="text-2xl font-bold mb-3">999</p>
+            <span class="badge bg-gray-100 my-2">ফায়ার সার্ভিস</span>
+            <div class="flex gap-2 flex-wrap">
+              <button class="btn btn-sm copyBtn" data-number="999">
+                <img src="/assets/copy.png" alt="" /> Copy
+              </button>
+              <button
+                class="btn btn-sm bg-green-600 text-white callBtn hover:bg-green-800"
+                data-name="ফায়ার সার্ভিস"
+                data-number="11-999"
+              >
+                <img src="/assets/call.png" alt="" />Call
+              </button>
+            </div>
+          </div>
+
+          <!-- Ambulance -->
+          <div class="card bg-base-100 shadow p-4">
+            <div class="flex justify-between items-center">
+              <div
+                class="text-4xl bg-[#ffe3e2] w-[40px] h-[40px] items-center flex justify-center rounded-[20%]"
+              >
+                <img src="assets/ambulance.png" class="w-[20px]" alt="" />
+              </div>
+              <button class="heartBtn text-xl">♡</button>
+            </div>
+            <h2 class="text-lg font-bold mt-2">অ্যাম্বুলেন্স</h2>
+            <p class="text-gray-400">Ambulance</p>
+            <p class="text-2xl font-bold mb-3">999</p>
+            <span class="badge bg-gray-100 my-2">অ্যাম্বুলেন্স</span>
+            <div class="flex gap-2 flex-wrap">
+              <button class="btn btn-sm copyBtn" data-number="333">
+                <img src="/assets/copy.png" alt="" /> Copy
+              </button>
+              <button
+                class="btn btn-sm bg-green-600 text-white callBtn hover:bg-green-800"
+                data-name="অ্যাম্বুলেন্স"
+                data-number="08790"
+              >
+                <img src="/assets/call.png" alt="" />Call
+              </button>
+            </div>
+          </div>
+
+          <!-- Baking-Service -->
+          <div class="card bg-base-100 shadow p-4">
+            <div class="flex justify-between items-center">
+              <div
+                class="text-4xl bg-[#ffe3e2] w-[40px] h-[40px] items-center flex justify-center rounded-[20%]"
+              >
+                <img src="assets/brac.png" class="w-[20px]" alt="" />
+              </div>
+              <button class="heartBtn text-xl">♡</button>
+            </div>
+            <h2 class="text-lg font-bold mt-2">ব্যাংকিং সেবা</h2>
+            <p class="text-gray-400">Banking Service</p>
+            <p class="text-2xl font-bold mb-3">999</p>
+            <span class="badge bg-gray-100 my-2">ব্যাংকিং</span>
+            <div class="flex gap-2 flex-wrap">
+              <button class="btn btn-sm copyBtn" data-number="999">
+                <img src="/assets/copy.png" alt="" /> Copy
+              </button>
+              <button
+                class="btn btn-sm bg-green-600 text-white callBtn hover:bg-green-800"
+                data-name="ব্যাংকিং সেবা"
+                data-number="999"
+              >
+                <img src="/assets/call.png" alt="" />Call
+              </button>
+            </div>
+          </div>
+
+          <!-- Bangladesh-Railway -->
+          <div class="card bg-base-100 shadow p-4">
+            <div class="flex justify-between items-center">
+              <div
+                class="text-4xl bg-[#ffe3e2] w-[40px] h-[40px] items-center flex justify-center rounded-[20%]"
+              >
+                <img
+                  src="assets/Bangladesh-Railway.png"
+                  class="w-[20px]"
+                  alt=""
+                />
+              </div>
+              <button class="heartBtn text-xl">♡</button>
+            </div>
+            <h2 class="text-lg font-bold mt-2">জাতীয় রেলসেবা</h2>
+            <p class="text-gray-400">Bangladesh-Railway</p>
+            <p class="text-2xl font-bold mb-3">999</p>
+            <span class="badge bg-gray-100 my-2">রেলসেবা</span>
+            <div class="flex gap-2 flex-wrap">
+              <button class="btn btn-sm copyBtn" data-number="999">
+                <img src="/assets/copy.png" alt="" /> Copy
+              </button>
+              <button
+                class="btn btn-sm bg-green-600 text-white callBtn hover:bg-green-800"
+                data-name="জাতীয় রেলসেবা"
+                data-number="999"
+              >
+                <img src="/assets/call.png" alt="" />Call
+              </button>
+            </div>
           </div>
         </div>
-
-        <!-- Police -->
-        <div class="card bg-base-100 shadow p-4">
-          <div class="flex justify-between items-center">
-            <div
-              class="text-4xl bg-[#ffe3e2] w-[40px] h-[40px] items-center flex justify-center rounded-[20%]"
-            >
-              <img src="./assets/police.png" class="w-[20px]" alt="" />
-            </div>
-            <button class="heartBtn text-xl">♡</button>
-          </div>
-          <h2 class="text-lg font-bold mt-2">পুলিশ</h2>
-          <p class="text-gray-400">Police</p>
-          <p class="text-2xl font-bold mb-3">999</p>
-          <span class="badge bg-gray-100 my-2">পুলিশ</span>
-          <div class="flex gap-2 flex-wrap">
-            <button class="btn btn-sm copyBtn" data-number="999">
-              <img src="./assets/copy.png" alt="" /> Copy
-            </button>
+        <!-- History Section -->
+        <div class="bg-white p-4 rounded-lg shadow">
+          <div class="flex justify-between items-center mb-3">
+            <h2 class="text-lg font-semibold">📞 Call History</h2>
             <button
-              class="btn btn-sm bg-green-600 text-white callBtn hover:bg-green-800"
-              data-name="পুলিশ"
-              data-number="999"
+              id="clearHistory"
+              class="btn btn-lg rounded-[50px] bg-green-600 text-white hover:bg-green-800"
             >
-              <img src="./assets/call.png" alt="" />Call
+              Clear
             </button>
           </div>
-        </div>
-
-        <!-- Fire Service -->
-        <div class="card bg-base-100 shadow p-4">
-          <div class="flex justify-between items-center">
-            <div
-              class="text-4xl bg-[#ffe3e2] w-[40px] h-[40px] items-center flex justify-center rounded-[20%]"
-            >
-              <img src="./assets/fire-service.png" class="w-[20px]" alt="" />
-            </div>
-            <button class="heartBtn text-xl">♡</button>
-          </div>
-          <h2 class="text-lg font-bold mt-2">ফায়ার সার্ভিস</h2>
-          <p class="text-gray-400">Fire Service</p>
-          <p class="text-2xl font-bold mb-3">999</p>
-          <span class="badge bg-gray-100 my-2">ফায়ার সার্ভিস</span>
-          <div class="flex gap-2 flex-wrap">
-            <button class="btn btn-sm copyBtn" data-number="999">
-              <img src="./assets/copy.png" alt="" /> Copy
-            </button>
-            <button
-              class="btn btn-sm bg-green-600 text-white callBtn hover:bg-green-800"
-              data-name="ফায়ার সার্ভিস"
-              data-number="11-999"
-            >
-              <img src="./assets/call.png" alt="" />Call
-            </button>
-          </div>
-        </div>
-
-        <!-- Ambulance -->
-        <div class="card bg-base-100 shadow p-4">
-          <div class="flex justify-between items-center">
-            <div
-              class="text-4xl bg-[#ffe3e2] w-[40px] h-[40px] items-center flex justify-center rounded-[20%]"
-            >
-              <img src="./assets/ambulance.png" class="w-[20px]" alt="" />
-            </div>
-            <button class="heartBtn text-xl">♡</button>
-          </div>
-          <h2 class="text-lg font-bold mt-2">অ্যাম্বুলেন্স</h2>
-          <p class="text-gray-400">Ambulance</p>
-          <p class="text-2xl font-bold mb-3">999</p>
-          <span class="badge bg-gray-100 my-2">অ্যাম্বুলেন্স</span>
-          <div class="flex gap-2 flex-wrap">
-            <button class="btn btn-sm copyBtn" data-number="333">
-              <img src="./assets/copy.png" alt="" /> Copy
-            </button>
-            <button
-              class="btn btn-sm bg-green-600 text-white callBtn hover:bg-green-800"
-              data-name="অ্যাম্বুলেন্স"
-              data-number="08790"
-            >
-              <img src="./assets/call.png" alt="" />Call
-            </button>
-          </div>
-        </div>
-
-        <!-- Baking-Service -->
-        <div class="card bg-base-100 shadow p-4">
-          <div class="flex justify-between items-center">
-            <div
-              class="text-4xl bg-[#ffe3e2] w-[40px] h-[40px] items-center flex justify-center rounded-[20%]"
-            >
-              <img src="./assets/brac.png" class="w-[20px]" alt="" />
-            </div>
-            <button class="heartBtn text-xl">♡</button>
-          </div>
-          <h2 class="text-lg font-bold mt-2">ব্যাংকিং সেবা</h2>
-          <p class="text-gray-400">Banking Service</p>
-          <p class="text-2xl font-bold mb-3">999</p>
-          <span class="badge bg-gray-100 my-2">ব্যাংকিং</span>
-          <div class="flex gap-2 flex-wrap">
-            <button class="btn btn-sm copyBtn" data-number="999">
-              <img src="./assets/copy.png" alt="" /> Copy
-            </button>
-            <button
-              class="btn btn-sm bg-green-600 text-white callBtn hover:bg-green-800"
-              data-name="ব্যাংকিং সেবা"
-              data-number="999"
-            >
-              <img src="./assets/call.png" alt="" />Call
-            </button>
-          </div>
-        </div>
-
-        <!-- Bangladesh-Railway -->
-        <div class="card bg-base-100 shadow p-4">
-          <div class="flex justify-between items-center">
-            <div
-              class="text-4xl bg-[#ffe3e2] w-[40px] h-[40px] items-center flex justify-center rounded-[20%]"
-            >
-              <img
-                src="./assets/Bangladesh-Railway.png"
-                class="w-[20px]"
-                alt=""
-              />
-            </div>
-            <button class="heartBtn text-xl">♡</button>
-          </div>
-          <h2 class="text-lg font-bold mt-2">জাতীয় রেলসেবা</h2>
-          <p class="text-gray-400">Bangladesh-Railway</p>
-          <p class="text-2xl font-bold mb-3">999</p>
-          <span class="badge bg-gray-100 my-2">রেলসেবা</span>
-          <div class="flex gap-2 flex-wrap">
-            <button class="btn btn-sm copyBtn" data-number="999">
-              <img src="./assets/copy.png" alt="" /> Copy
-            </button>
-            <button
-              class="btn btn-sm bg-green-600 text-white callBtn hover:bg-green-800"
-              data-name="জাতীয় রেলসেবা"
-              data-number="999"
-            >
-              <img src="./assets/call.png" alt="" />Call
-            </button>
-          </div>
+          <div id="historyList" class="space-y-2 text-sm text-gray-700"></div>
         </div>
       </div>
+
     </main>
     <footer></footer>
   </body>
